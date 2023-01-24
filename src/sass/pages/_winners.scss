@@ -1,0 +1,51 @@
+.table {
+  font-size: 24px;
+  margin: 70px auto 20px;
+  font-size: 2rem;
+}
+
+.table svg {
+  margin: -6px 0;
+  width: 50px;
+  height: 25px;
+}
+
+.table th,
+.table td {
+  text-align: center;
+  padding: 4px 20px 15px 20px;
+}
+
+td.td-string, 
+th.td-string {
+  text-align: left;
+  width: 350px;
+}
+
+.winners__headers {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+.table-button {
+  width: 200px;
+  cursor: pointer;
+}
+
+.table-button::after {
+  content: "";
+  display: inline-block;
+  margin-left: 10px;
+}
+ 
+.table-button.asc::after {
+  content: "🠗";
+}
+  
+.table-button.desc::after {
+  content: "🠕";
+}

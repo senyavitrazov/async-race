@@ -1,0 +1,16 @@
+*.*~
+.vscode
+.vs
+.idea
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+logs
+*.log
+npm-debug.log*
+node_modules/
+*.tsbuildinfo
+.npm
+.eslintcache
+dist

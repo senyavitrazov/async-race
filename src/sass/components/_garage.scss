@@ -1,0 +1,75 @@
+@keyframes car-animation {
+  from {
+    left: 0%;
+  }
+  to {
+    left: calc(100% - 100px);
+  }
+}
+
+.car {
+  margin: 50px 0;
+  &__top {
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid black;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  &__name {
+    font-weight: 700;
+  }
+
+  &__bottom {
+    display: flex;
+  }
+
+  &__button {
+    padding: 5px 10px;
+
+    &:hover {
+      color: #969696;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+.car__track {
+  position: relative;
+  border-bottom: 2px dashed black;
+  height: 50px;
+
+  .car__image {
+    position: absolute;
+    height: 50px;
+    bottom: -9px;
+    left: 0;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+    &::after {
+      content: "";
+      display: none;
+      width: 100px;
+      height: 100px;
+      top: -69%;
+      left: 34%;
+      position: absolute;
+      background: url(https://img1.picmix.com/output/stamp/normal/7/9/4/7/1087497_831dc.gif) no-repeat 0 0;
+      background-size: contain;
+      z-index: 500;
+    }
+    &.broken::after {
+      display: block;
+    }
+
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
