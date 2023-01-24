@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                            
+    "module": "ES2022",
+    "sourceMap": true,
+    "outDir": "./dist/",
+    "strict": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules"]
+}

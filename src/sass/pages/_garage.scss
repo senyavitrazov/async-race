@@ -1,0 +1,30 @@
+.garage {
+  margin-top: 30px;
+  &__headers {
+    display: flex;
+    justify-content: space-around;
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+  }  
+}
+
+
+.message {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 1%;
+  top: 2%;
+  font-size: 2.2rem;
+  background: $additional-color;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.message.visible {
+  display: block;
+}

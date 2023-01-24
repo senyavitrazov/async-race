@@ -1,0 +1,86 @@
+.garage-menu {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto 15px;
+  justify-content: center;
+
+  &__name {
+    height: 30px;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 0px;
+    
+    &:disabled {
+      filter: opacity(40%);
+    }
+  }
+
+  &__color {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+
+    &::-webkit-color-swatch {
+      border: none;
+    }
+
+    &::-moz-color-swatch {
+      border: none;
+    }
+
+    &:disabled {
+      filter: opacity(40%);
+    }
+  }
+
+  &__button {
+    background: $additional-color;
+    border: 1px solid black;
+    padding: 5px 10px;
+    width: 120px;
+    font-weight: 500;
+
+    &:disabled {
+      filter: opacity(40%);
+    }
+
+    &:hover {
+      border: white;
+      filter: invert(100%);
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  margin: 0 auto;
+  gap: 1.7%;
+  >* {
+    width: 30%;
+  }
+}
+
+.garage-menu__button {
+    background: $additional-color;
+    border: 1px solid black;
+    padding: 5px 10px;
+    width: 120px;
+    font-weight: 500;
+
+    &:hover {
+      border: white;
+      filter: invert(100%);
+    }
+  }
